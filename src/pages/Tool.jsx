@@ -8,7 +8,7 @@ const Tool = () => {
 
     const handleSubmit = async() => {
         try{
-            const res = axios.post('http://localhost:5000/create', {
+            const res = axios.post('https://mvp-template-v1-backend.onrender.com/create', {
                 text,
             });
             setResult("Processed: "+ text);

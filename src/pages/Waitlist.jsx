@@ -9,7 +9,7 @@ const Waitlist = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try{
-            await axios.post('http://localhost:5000/create', {
+            await axios.post('https://mvp-template-v1-backend.onrender.com', {
                 email,
             });
             setMessage("You are on the Waiting List");
