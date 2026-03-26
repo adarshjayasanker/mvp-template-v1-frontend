@@ -1,15 +1,15 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Waitlist from './pages/Waitlist.js';
 import Tool from './pages/Tool.js';
 
 const App = () => {
   return(
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Waitlist/>}/>
         <Route path="/tool" element={<Tool/>}/>
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 };
 
